@@ -86,7 +86,8 @@ public class StoryShow extends StoryComponent
         Rectangle coverBackground = new Rectangle(Scenes.wWidth, Scenes.wHeight);
         Text coverText = new Text("......");
         coverText.setFont(Font.font("Microsoft YaHei", 400));
-        coverText.setLayoutX(260);
+        Font.getFontNames();
+        coverText.setLayoutX(200);
         coverText.setLayoutY(420);
         cover = Shape.subtract(coverBackground, coverText);
         cover.setFill(Color.BLACK);
