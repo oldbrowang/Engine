@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<deployment>
+    <tinman_>
+        <startX>200</startX>
+        <startY>-100</startY>
+        <speed>110</speed>
+    </tinman_>
+</deployment>
