@@ -93,6 +93,7 @@ public class StoryShow extends StoryComponent
         cover.setFill(Color.BLACK);
         cover.setScaleX(30);
         cover.setScaleY(30);
+        cover.setOpacity(0.5);
         addToRoot(cover);
     }
 
