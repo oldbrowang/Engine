@@ -165,4 +165,14 @@ public class Component
         //setTimeout(Random.getRandomInteger(5000, 10000), e -> player.dispose());
 
     }
+
+    public static boolean isWindowsOs()
+    {
+        String osStr = System.getProperty("os.name").toLowerCase();
+        if (osStr.indexOf("windows") == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }

@@ -87,7 +87,11 @@ public class StoryShow extends StoryComponent
         Text coverText = new Text("......");
         coverText.setFont(Font.font("Microsoft YaHei", 400));
         Font.getFontNames();
-        coverText.setLayoutX(200);
+        if (isWindowsOs()) {
+            coverText.setLayoutX(258);
+        } else {
+            coverText.setLayoutX(200);
+        }
         coverText.setLayoutY(420);
         cover = Shape.subtract(coverBackground, coverText);
         cover.setFill(Color.BLACK);
