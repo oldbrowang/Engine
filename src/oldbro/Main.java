@@ -14,12 +14,6 @@ public class Main extends Application
 
     public static void main(String[] args)
     {
-        //double l = (double) 1 / 3 * 1000;
-        //System.out.println(l);
-
-        System.out.println(0.0 / (1.1 / 0));
-
-
         launch(args);
     }
 }
