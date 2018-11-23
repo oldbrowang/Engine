@@ -101,7 +101,6 @@ public class Component
     protected static void nowLoading(EventHandler<ActionEvent> during, EventHandler<ActionEvent> after)
     {
         BackJob backJob = new BackJob(during);
-        backJob.start();
         loadScene(Color.BLACK);
         ImageView animationView = new ImageView();
         animationView.setLayoutX(300);
@@ -137,8 +136,7 @@ public class Component
             }
         };
         player.playAllFrames(3000, finishHandler);
-        //player.playFrames(0, 0, 3000, finishHandler);
-
+        setTimeout(1000, e -> backJob.start()); //parallel bug workaround
     }
 
     public static void preLoadGifFrames(String gif, ImageView animationView)
